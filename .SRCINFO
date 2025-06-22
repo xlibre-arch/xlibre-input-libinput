@@ -1,5 +1,5 @@
 pkgbase = xlibre-input-libinput
-	pkgdesc = Generic input driver for the Xlibre server based on libinput
+	pkgdesc = Generic input driver for the XLibre server based on libinput
 	pkgver = 1.5.0.1
 	pkgrel = 2
 	url = https://github.com/X11Libre/xf86-input-libinput
