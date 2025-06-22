@@ -3,15 +3,16 @@
 _basename="xf86-input-libinput"
 pkgname="${_basename//xf86/xlibre}"
 pkgver=1.5.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Generic input driver for the Xlibre server based on libinput"
 arch=('aarch64' 'x86_64')
 url="https://github.com/X11Libre/${_basename}"
 license=('MIT')
 depends=('glibc' 'libinput>=1.11')
 makedepends=('libx11' 'libxi' 'meson>=0.50' 'xlibre-server-devel' 'xorgproto' 'X-ABI-XINPUT_VERSION=26.0')
-provides=("${_basename}")
-conflicts=("${_basename}" 'xorg-server<1.19.0' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
+provides=("${_basename}" 'xorg-input-libinput-xlibre')
+conflicts=("${_basename}" 'xorg-input-libinput-xlibre' 'xorg-server<1.19.0' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
+replaces=('xorg-input-libinput-xlibre')
 groups=('xlibre-drivers')
 _pkgsrc="${_basename}-xlibre-${_basename}-${pkgver}"
 source=("${_pkgsrc}.tar.gz::${url}/archive/refs/tags/xlibre-${_basename}-${pkgver}.tar.gz")
