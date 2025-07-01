@@ -1,7 +1,7 @@
 pkgbase = xlibre-input-libinput
 	pkgdesc = Generic input driver for the XLibre server based on libinput
 	pkgver = 1.5.0.1
-	pkgrel = 4
+	pkgrel = 5
 	url = https://github.com/X11Libre/xf86-input-libinput
 	arch = aarch64
 	arch = x86_64
@@ -15,7 +15,6 @@ pkgbase = xlibre-input-libinput
 	makedepends = X-ABI-XINPUT_VERSION=26.0
 	depends = glibc
 	depends = libinput>=1.11
-	provides = xf86-input-libinput
 	provides = xf86-input-libinput-xlibre
 	conflicts = xf86-input-libinput
 	conflicts = xf86-input-libinput-xlibre
