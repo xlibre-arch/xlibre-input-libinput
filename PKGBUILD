@@ -2,8 +2,8 @@
 
 _basename="xf86-input-libinput"
 pkgname="${_basename//xf86/xlibre}"
-pkgver=1.5.0.1
-pkgrel=5
+pkgver=1.5.1.0
+pkgrel=1
 pkgdesc="Generic input driver for the XLibre server based on libinput"
 arch=('aarch64' 'x86_64')
 url="https://github.com/X11Libre/${_basename}"
@@ -16,7 +16,7 @@ replaces=('xf86-input-libinput-xlibre')
 groups=('xlibre-drivers')
 _pkgsrc="${_basename}-xlibre-${_basename}-${pkgver}"
 source=("${_pkgsrc}.tar.gz::${url}/archive/refs/tags/xlibre-${_basename}-${pkgver}.tar.gz")
-b2sums=('af5543cc59a94f1ecdce92b1cf205896855c36ddbac7efb9669e1ec6641e2e4b4ced3a417ea308c6c49f4a73a377dd8b647c303e6314e7808a56b7589bc2c209')
+b2sums=('b4a6061dd310c3e900606a128dc28c83b6e0dce6e6aa92e30c1d5788c5f0b6683b41e0e3e24ae8f4cf5014ba217a720240427c9f835038fe1b2794b58a330059')
 
 build() {
   local meson_options=(
