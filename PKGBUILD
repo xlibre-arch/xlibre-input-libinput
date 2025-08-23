@@ -1,4 +1,5 @@
 # Maintainer:  Vitalii Kuzhdin <vitaliikuzhdin@gmail.com>
+# Maintainer:  artist for XLibre
 
 _basename="xf86-input-libinput"
 pkgname="${_basename//xf86/xlibre}"
@@ -6,7 +7,7 @@ pkgver=1.5.1.0
 pkgrel=1
 pkgdesc="Generic input driver for the XLibre server based on libinput"
 arch=('aarch64' 'x86_64')
-url="https://github.com/X11Libre/${_basename}"
+url="https://github.com/X11Libre/${_basename}/"
 license=('MIT')
 depends=('glibc' 'libinput>=1.11')
 makedepends=('libx11' 'libxi' 'meson>=0.50' 'xlibre-server-devel' 'xorgproto' 'X-ABI-XINPUT_VERSION=26.0')
