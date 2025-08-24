@@ -10,12 +10,13 @@ pkgbase = xlibre-input-libinput
 	makedepends = libx11
 	makedepends = libxi
 	makedepends = meson>=0.50
-	makedepends = xlibre-server-devel
+	makedepends = xlibre-xserver-devel
 	makedepends = xorgproto
 	makedepends = X-ABI-XINPUT_VERSION=26.0
 	depends = glibc
 	depends = libinput>=1.11
 	provides = xf86-input-libinput-xlibre
+	provides = xf86-input-libinput
 	conflicts = xf86-input-libinput
 	conflicts = xf86-input-libinput-xlibre
 	conflicts = xorg-server<1.19.0
