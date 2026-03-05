@@ -1,20 +1,19 @@
 pkgbase = xlibre-input-libinput
 	pkgdesc = XLibre fork of the generic input driver for the X.Org server based on libinput
 	pkgver = 25.0.0
-	pkgrel = 7
+	pkgrel = 8
 	url = https://github.com/X11Libre/xf86-input-libinput
 	install = xlibre-input-libinput.install
 	arch = x86_64
 	arch = aarch64
 	groups = xlibre-drivers
 	license = MIT
-	makedepends = xlibre-xserver-devel>=25.0
+	makedepends = xlibre-xserver-devel
 	makedepends = xorgproto
 	makedepends = libxi
 	makedepends = libx11
 	makedepends = libxfont2
 	makedepends = meson
-	depends = xlibre-xserver>=25.0
 	depends = glibc
 	depends = libinput
 	provides = xf86-input-libinput

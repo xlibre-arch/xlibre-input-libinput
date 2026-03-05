@@ -2,14 +2,14 @@
 
 pkgname=xlibre-input-libinput
 pkgver=25.0.0
-pkgrel=7
+pkgrel=8
 pkgdesc="XLibre fork of the generic input driver for the X.Org server based on libinput"
 arch=(x86_64 aarch64)
 license=('MIT')
 _pkgname="${pkgname//xlibre/xf86}"
 url="https://github.com/X11Libre/${_pkgname}"
-depends=("xlibre-xserver>=${pkgver%.*}" 'glibc')
-makedepends=("xlibre-xserver-devel>=${pkgver%.*}" 'xorgproto')
+depends=('glibc')
+makedepends=('xlibre-xserver-devel' 'xorgproto')
 conflicts=("${_pkgname}")
 provides=("${_pkgname}")
 source=("${url}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
