@@ -1,18 +1,19 @@
-# Maintainer: artist <artist@artixlinux.org>
 # Maintainer: callmetango
+# Contributor: artist <artist@artixlinux.org>
+# Contributor: Vitalii Kuzhdin <vitaliikuzhdin@gmail.com>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=xlibre-input-libinput
-_pkgname="${pkgname//xlibre/xf86}"
+_pkgname=xf86-input-libinput
 pkgver=25.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Generic input driver for the XLibre Xserver based on libinput"
 arch=('x86_64')
 license=('MIT')
-url="https://github.com/X11Libre/xf86-input-libinput"
-depends=('libinput' 'glibc')
-makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'libxi' 'libx11' 'xorgproto')
+url='https://github.com/X11Libre/xf86-input-libinput'
+depends=('libinput' 'glibc' 'xlibre-xserver')
+makedepends=('xlibre-xserver-devel' 'X-ABI-XINPUT_VERSION=26.0' 'meson' 'libxi' 'libx11' 'xorgproto')
 provides=('xf86-input-libinput')
 conflicts=('xf86-input-libinput' 'X-ABI-XINPUT_VERSION<26' 'X-ABI-XINPUT_VERSION>=27')
 groups=('xlibre-drivers')
